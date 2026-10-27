@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Explorer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+    <p>Click a region on the world map to explore a country.</p>
+
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+        alt="World map with clickable country regions"
+        usemap="#worldmap"
+        width="1000"
+        height="500"
+    >
+
+    <map name="worldmap">
+
+        <!-- Circle: Canada -->
+        <area shape="circle"
+              coords="220,130,35"
+              href="https://en.wikipedia.org/wiki/Canada"
+              alt="Canada"
+              target="_blank">
+
+        <!-- Rectangle: United States -->
+        <area shape="rect"
+              coords="230,190,330,245"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States"
+              target="_blank">
+
+        <!-- Polygon: Brazil -->
+        <area shape="poly"
+              coords="350,270,400,275,420,320,395,375,365,340"
+              href="https://en.wikipedia.org/wiki/Brazil"
+              alt="Brazil"
+              target="_blank">
+
+        <!-- Circle: United Kingdom -->
+        <area shape="circle"
+              coords="490,155,12"
+              href="https://en.wikipedia.org/wiki/United_Kingdom"
+              alt="United Kingdom"
+              target="_blank">
+
+        <!-- Rectangle: India -->
+        <area shape="rect"
+              coords="615,205,680,265"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              target="_blank">
+
+        <!-- Polygon: China -->
+        <area shape="poly"
+              coords="660,175,730,175,765,205,735,240,680,230"
+              href="https://en.wikipedia.org/wiki/China"
+              alt="China"
+              target="_blank">
+
+        <!-- Circle: Australia -->
+        <area shape="circle"
+              coords="805,350,30"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              target="_blank">
+
+        <!-- Default: General world information -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="World information"
+              target="_blank">
+
+    </map>
+
+</body>
+</html>
